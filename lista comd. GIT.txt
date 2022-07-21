@@ -1,0 +1,3 @@
+GIT INIT  >>>  inicializar o repositório do github
+GIT STATUS >>> mostra a situação de todos os arquivos da pasta
+GIT ADD "nome_do_projeto" >>> adicionar arquivo ao repositório
