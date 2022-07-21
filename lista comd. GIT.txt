@@ -1,3 +1,12 @@
 GIT INIT  >>>  inicializar o repositório do github
 GIT STATUS >>> mostra a situação de todos os arquivos da pasta
-GIT ADD "nome_do_projeto" >>> adicionar arquivo ao repositório
+GIT ADD "nome_do_projeto" >>> adicionar arquivo ao repositório (controle de versão)
+GIT ADD . >>> adicionar um grupo/montante de arquivos ao repositório (controle de versão)
+#Comentário: COMMIT é criar versão
+GIT COMMIT -M "o_que_foi_feito_nesta_versao" >>> 
+git config --global user.email "seu@e-mail.com" >>> adicionar usuário
+GIT PUSH
+GIT REMOTE ADD ORIGIN cole_aqui_seu_link_sem_aspas >>>  você acabou de definir para onde o seu código vai estar sendo enviado a cada novo comando PUSH
+GIT PUSH >>> "subir" o código q vc tá criando para o repositório q vc linkou no passo acima
+GIT HELP >>> apresenta uma lista completa dos comandos do GIT
+GIT HELP -A >>>apresenta uma lista completa dos SUBcomandos do GIT
