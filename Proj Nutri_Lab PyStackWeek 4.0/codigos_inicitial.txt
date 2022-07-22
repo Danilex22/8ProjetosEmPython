@@ -1,0 +1,17 @@
+#criar e ativar o ambiente virtual:
+python -m venv venv
+venv/Scripts/Activate
+#Caso algum comando retorne um erro de permissão execute o código e tente novamente:
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+#Instale as bibliotecas:
+pip install django
+pip install pillow
+#Iniciar um projeto Django:
+django-admin startproject nutri_lab .
+#Crie um app autenticacão:
+python manage.py startapp autenticacao
+# Rodar o servidor
+python manage.py runserver
+# Fazer as migrações das models
+pytho manage.py makemigrations
+
