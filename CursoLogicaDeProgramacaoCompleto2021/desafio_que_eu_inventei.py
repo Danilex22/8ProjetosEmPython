@@ -1,5 +1,5 @@
 '''
-Numa escola
+Na escolinha do professor Girafares,
 você é aluno = True "Acesso Negado!"
 você é professor = True "aí segue a sequência da lógica
 construir uma lista de alunos,
@@ -13,13 +13,19 @@ reprovado média <5 e presença <50
 matricula excluída <=10 presenças
 '''
 '''
-identficação = ('aluno' or 'professor')
-if identficação = 'aluno'
-    print('Acesso negado!')
-else identficação = 'professor'
-    print('Acesso autorizado') #dar sequencia em toda a lógica do sistema
-if 'Você é aluno?' = True
-alunos = ['joão','maria', 'pedro', 'paulo','chico','chiquinha','fiuka','peteka','tuca','butuca','beteti','tituca','metreca']
+alunos = ['girafares','kiko','chaves','chiquinha','pópis','nhonho','paty','godinez','eureka','batuta']
+notasP1 = float([100,5.1,5.2,5.5,])
+notasP2 = float([100,5.5,5.6,5.9,])
+notasP3 = float([100,5.9,6,6.2,])
+notasP4 = float([100,6.0,6.2,6.3,])
+notasP5 = float([100,6.9,7,7.5,])
+QtePresencas = [100,75,77,78,80,80,50,57,100,10 ]
 for aluno in alunos:
     print(aluno)
+SeuPersonagem = input('Escolha seu personagem: ')
+if SeuPersonagem == 'girafares':
+    print ('Acesso autorizado!')
+    print ('Bem-Vindo! ao Sistema de Notas da Escolinha')
+else:
+    print ('Acesso negado!')
 '''
