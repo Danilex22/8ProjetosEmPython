@@ -1,15 +1,16 @@
 import PySimpleGUI as sg
+sg.theme('DarkAmber')   # Add a little color to your windows
+# All the stuff inside your window. This is the PSG magic code compactor...
+layout = [  [sg.Text('Some text on Row 1')],
+            [sg.Text('Enter something on Row 2'), sg.InputText()],
+            [sg.OK(), sg.Cancel()]]
 
-layout = [[sg.Text('Very basic Window')],
-          [sg.Text('Click X in titlebar or the Exit button')],
-          [sg.Button('Go'), sg.Button('Exit')]]
-
+# Create the Window
 window = sg.Window('Window Title', layout)
-
-while True:
+# Event Loop to process "events"
+while True:             
     event, values = window.read()
-    print(event, values)
-    if event == sg.WIN_CLOSED or event == 'Exit':
+    if event in (sg.WIN_CLOSED, 'Cancel'):
         break
 
 window.close()
