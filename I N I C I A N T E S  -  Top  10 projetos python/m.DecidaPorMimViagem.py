@@ -27,9 +27,9 @@ nordeste = ['Piaui (PI)', 'Maranhão (MA)', 'Alagoas (AL)', 'Bahia (BA)', 'Rio G
 ########## INPUT Descisão Usuário ##########
 while True:
     regiao = str(input("""
-    #----------------------------------------#
-    |  DECIDA PARA MIM MINHA PRÓXIMA VIAGEM  | 
-    #----------------------------------------#
+    #-----------------------------------------#
+    |  DECIDA POR MIM A MINHA PRÓXIMA VIAGEM  | 
+    #-----------------------------------------#
     Apresentamos abaixo um leque com as 5 maiores 
     macrorregiões do país com destinos turísticos.
     Conte para nós onde você espera/deseja viajar (região)
