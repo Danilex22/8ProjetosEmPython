@@ -13,26 +13,27 @@ class ListaParImpar:
         self.layout = [
             [sg.Text('Valor mínimo:'),sg.Input()],
             [sg.Text('Valor máximo:'),sg.Input()],
-            [sg.Button('Gerar lista'), sg.Button('Exit')]
+            [sg.Button('Gerar lista')],
+            [sg.Output(size=(20,10))],
+            [sg.Button('Exit')]
             ]
-        #janela
-        self.janela = sg.Window('Lista Par / ímpar', layout= self.layout)
-        #ler os dados da tela
-        self.eventos, self.valores = self.janela.Read()
 
     def ListaParImpar(self):
         try:
             while True:
-                for num in range( self.minimo, self.maximo+1):
-                    if num % 2 == 0:
-                        print("= nº Par", self.num)
-                        continue
-                    print("= nº ímpar", self.num)
+                #janela
+                    self.janela = sg.Window('Lista Par / ímpar', layout= self.layout)
+                    #ler os dados da tela
+                    self.eventos, self.valores = self.janela.Read()
+                    for num in range( self.minimo, self.maximo+1):
+                        if num % 2 == 0:
+                            print("= nº Par", self.num)
+                            print("= nº ímpar", self.num)
                     if self.eventos == sg.WIN_CLOSED or self.eventos == 'Exit':
                         break
         except:
-            print('Favor digitar apenas números!')
-            self.Iniciar()        
+                print('Favor digitar apenas números!')
+                self.Iniciar()        
 
         self.Window.close()
 tela = ListaParImpar()
