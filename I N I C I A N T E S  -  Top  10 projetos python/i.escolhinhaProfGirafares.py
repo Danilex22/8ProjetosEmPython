@@ -32,10 +32,10 @@ print('Lista de Alunos Matriculados: ', alunos)
 #### Composição das Notas ####
 
 # ao longo do ano são 4 provas : P1, P2, P3 e P4.
-notas_P1 = [round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),]
-notas_P2 = [round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),]
-notas_P3 = [round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),]
-notas_P4 = [round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),]
+notas_P1 = [round(random.uniform(3,10), 2),round(random.uniform(4,10), 2),round(random.uniform(5,10), 2),round(random.uniform(5,10), 2),round(random.uniform(6,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(7,10), 2),round(random.uniform(5,10), 2),]
+notas_P2 = [round(random.uniform(3,10), 2),round(random.uniform(4,10), 2),round(random.uniform(5,10), 2),round(random.uniform(5,10), 2),round(random.uniform(6,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(7,10), 2),round(random.uniform(5,10), 2),]
+notas_P3 = [round(random.uniform(3,10), 2),round(random.uniform(4,10), 2),round(random.uniform(5,10), 2),round(random.uniform(5,10), 2),round(random.uniform(6,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(7,10), 2),round(random.uniform(5,10), 2),]
+notas_P4 = [round(random.uniform(3,10), 2),round(random.uniform(4,10), 2),round(random.uniform(5,10), 2),round(random.uniform(5,10), 2),round(random.uniform(6,10), 2),round(random.uniform(3,10), 2),round(random.uniform(3,10), 2),round(random.uniform(7,10), 2),round(random.uniform(5,10), 2),]
 print('-------------------------------------------')
 print('Resultados da 1ª prova:     ', notas_P1)
 print('Resultados da 2ª prova:     ', notas_P2)
@@ -82,6 +82,11 @@ print('A média global da turma na Prova1=   ', media_P1)
 print('A média global da turma na Prova2=   ', media_P2)
 print('A média global da turma na Prova3=   ', media_P3)
 print('A média global da turma na Prova4=   ', media_P4)
+print('-------------------------------------------')
+#### Para iterar sobre os índices de uma sequência ####
+for i in range(len(alunos)):
+    print(i, alunos[i])
+
 
 #### Cálculo da média de cada aluno ####
 'kiko','chaves','chiquinha','pópis','nhonho','paty','godinez','eureka','batuta'
