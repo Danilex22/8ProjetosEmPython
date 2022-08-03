@@ -10,6 +10,9 @@ atribuir sua lista do total de presenças (mínimo=1; máximo = 100)
 construir uma lógica de aprovado ou não aprovado com base no conceito média
 '''
 import random
+from statistics import median
+from math import isnan
+from itertools import filterfalse
 
 #### Loguin de Acesso ####
 Acesso = input('Escolha seu personagem: ')
@@ -70,10 +73,10 @@ situação=matricula excluída <=10% presenças
 '''
 
 #### Cálculo da média Global da turma ####
-media_P1 = []
-media_P2 = []
-media_P3 = []
-media_P4 = []
+media_P1 = median(notas_P1)
+media_P2 = median(notas_P2)
+media_P3 = median(notas_P3)
+media_P4 = median(notas_P4)
 print('-------------------------------------------')
 print('A média global da turma na Prova1=   ', media_P1)
 print('A média global da turma na Prova2=   ', media_P2)
@@ -81,4 +84,35 @@ print('A média global da turma na Prova3=   ', media_P3)
 print('A média global da turma na Prova4=   ', media_P4)
 
 #### Cálculo da média de cada aluno ####
+'kiko','chaves','chiquinha','pópis','nhonho','paty','godinez','eureka','batuta'
+media_kiko =        (notas_P1[0]+notas_P2[0]+notas_P3[0]+notas_P4[0])/4
+media_chaves =      (notas_P1[1]+notas_P2[1]+notas_P3[1]+notas_P4[1])/4
+media_chiquinha =   (notas_P1[2]+notas_P2[2]+notas_P3[2]+notas_P4[2])/4
+media_popis =       (notas_P1[3]+notas_P2[3]+notas_P3[3]+notas_P4[3])/4
+media_nhonho =      (notas_P1[4]+notas_P2[4]+notas_P3[4]+notas_P4[4])/4
+media_paty =        (notas_P1[5]+notas_P2[5]+notas_P3[5]+notas_P4[5])/4
+media_godinez =     (notas_P1[6]+notas_P2[6]+notas_P3[6]+notas_P4[6])/4
+media_eureka =      (notas_P1[7]+notas_P2[7]+notas_P3[7]+notas_P4[7])/4
+media_batuta =      (notas_P1[8]+notas_P2[8]+notas_P3[8]+notas_P4[8])/4
 print('-------------------------------------------')
+print('A média do aluno Kiko foi: ', round(media_kiko,2))
+print('A média do aluno Chaves foi: ', round(media_chaves,2))
+print('A média da aluna Chiquinha foi: ', round(media_chiquinha,2))
+print('A média da aluna Pópis foi: ', round(media_popis,2))
+print('A média do aluno Nhonho foi: ', round(media_nhonho,2))
+print('A média da aluna Paty foi: ', round(media_paty,2))
+print('A média do aluno Godinez foi: ', round(media_godinez,2))
+print('A média do aluno Eureka foi: ', round(media_eureka,2))
+print('A média do aluno Batuta foi: ', round(media_batuta),2)
+print('-------------------------------------------')
+#### Situação do Aluno relação à Média ####
+print('Situação do aluno Kiko :')
+if media_kiko >= 8:
+    print("APROVADO!!!")
+elif media_kiko >= 7:
+    print('Aprovado!')
+elif media_kiko >=5:
+    print('Recuperação')
+elif media_kiko < 5:
+    print('Reprovado.')
+
