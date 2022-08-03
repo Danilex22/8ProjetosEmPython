@@ -69,7 +69,16 @@ situação= REPROVADO     média <5 e presença <50%
 situação=matricula excluída <=10% presenças
 '''
 
-#### Cálculo das médias de cada aluno ####
-
+#### Cálculo da média Global da turma ####
+media_P1 = []
+media_P2 = []
+media_P3 = []
+media_P4 = []
 print('-------------------------------------------')
+print('A média global da turma na Prova1=   ', media_P1)
+print('A média global da turma na Prova2=   ', media_P2)
+print('A média global da turma na Prova3=   ', media_P3)
+print('A média global da turma na Prova4=   ', media_P4)
 
+#### Cálculo da média de cada aluno ####
+print('-------------------------------------------')
