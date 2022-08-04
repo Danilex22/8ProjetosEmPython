@@ -2,9 +2,7 @@
 Construir lista de alunos
 Construir lista de professores
 Construir sistema de loguin, acesso exclusivo aos professores
-Construir um 
-
-construir uma lista de alunos,
+Construir uma construir uma lista de alunos,
 atribuir suas notas na prova 1,2,3,4,5
 atribuir sua lista do total de presenças (mínimo=1; máximo = 100)
 construir uma lógica de aprovado ou não aprovado com base no conceito média
