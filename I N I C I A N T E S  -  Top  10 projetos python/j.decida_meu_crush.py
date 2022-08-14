@@ -1,5 +1,7 @@
 '''
 Inteligência Artificial para calcular
+Aplicativo já desenvolvido em Microsoft Excel
+
 a probabilidade de seguir neste relacionamento
 variáveis:
 homem = digite seu nome

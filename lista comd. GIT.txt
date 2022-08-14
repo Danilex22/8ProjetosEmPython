@@ -9,3 +9,5 @@ GIT REMOTE ADD ORIGIN cole_aqui_seu_link_sem_aspas >>>  você acabou de definir 
 GIT PUSH >>> "subir" o código q vc tá criando para o repositório q vc linkou no passo acima
 GIT HELP >>> apresenta uma lista completa dos comandos do GIT
 GIT HELP -A >>>apresenta uma lista completa dos SUBcomandos do GIT
+GIT REFLOG >>> ver o histórico de versões já salvas no git
+GIT RESET --HARD digite_aqui_o_código_da_versão >>> resgata uma versão antiga do histórico de versões
